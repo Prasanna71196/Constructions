@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>About Us | PK Builders</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+   body {
+  margin: 0;
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #efecc9;
+  background: #23232b; 
+}
+
+.ub-header {
+  background: #222229;
+  border-bottom: 2px solid #f8eec1;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.ub-header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  height: 70px;
+}
+
+.ub-brand {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.55rem;
+  color: #ffe066;           
+}
+
+.ub-nav a {
+  text-decoration: none;
+  color: #ffe066;           
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  margin-left: 28px;
+  transition: color .18s;
+}
+.ub-nav a:hover {
+  color: #f8eec1;            
+}
+
+.ub-hero {
+  position: relative;
+  background: linear-gradient(110deg, #32323d 0, #615e48 100%);
+  padding: 64px 0 48px 0;
+  text-align: center;
+}
+
+.ub-hero-bg {
+  position: absolute;
+  left: 0; top: 0; width: 100%; height: 100%; opacity: .09;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=70') center/cover no-repeat;
+  z-index: 1;
+}
+
+.ub-hero-content {
+  position: relative;
+  z-index: 2;
+  color: #ffe066;
+}
+
+.ub-hero h1 {
+  font-family: 'Montserrat',sans-serif;
+  font-size: 2.65rem;
+  font-weight: 700;
+  letter-spacing: .03em;
+  margin-bottom: 10px;
+  color: #ffe066;
+}
+
+.ub-hero p {
+  font-size: 1.19rem;
+  color: #ffe066;
+  margin-bottom: 0;
+  opacity: 0.84;
+}
+
+.ub-section {
+  padding: 54px 0;
+  background: #2c2c38; 
+}
+
+.ub-section.alt {
+  background: #353535;
+}
+
+.ub-section-inner {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.ub-section h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2.0rem;
+  color: #ffd43b;  
+  margin-bottom: 30px;
+}
+
+.ub-section h3 {
+  font-size: 1.15rem;
+  color: #ffe066;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.ub-values-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin-top: 32px;
+}
+
+.ub-value {
+  background: #29292f;
+  border-radius: 10px;
+  box-shadow: 0 2px 18px rgba(220,210,100,0.07);
+  padding: 24px 16px 18px 20px;
+  min-width: 210px;
+  flex: 1 1 210px;
+}
+.ub-value-title {
+  color: #ffe066;
+  font-size: 1.12rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.ub-value-text {
+  color: #f8eec1;
+  font-size: 1.01rem;
+}
+
+.ub-team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.ub-team-member {
+  background: #21212b;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(230,210,100,0.05);
+  padding: 32px 21px 21px 21px;
+  min-width: 220px;
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ub-team-info {
+  text-align: center;
+}
+.ub-team-name {
+  font-weight: 700;
+  color: #ffd43b;
+  font-size: 1.16rem;
+}
+.ub-team-title {
+  color: #ffe066;
+  font-size: 1.01rem;
+  margin-bottom: 8px;
+}
+.ub-team-desc {
+  color: #f8eec1;
+  font-size: 0.98rem;
+}
+
+.ub-team-photo, .ub-img {
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 18px;
+  background: #23232b;
+  border: 2px solid #ffe066;
+}
+.ub-img {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.ub-columns {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.ub-columns > div {
+  flex: 1 1 240px;
+  background: #23232b;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(250,225,140,0.04);
+  padding: 26px 18px;
+}
+.ub-columns h3 {
+  margin-bottom: 9px;
+  color: #ffd43b;
+}
+
+.ub-list {
+  list-style: disc inside;
+  color: #ffe066;
+  font-size: 1.08rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.ub-list li {
+  margin-bottom: 12px;
+  color: #f8eec1;
+}
+
+.ub-footer {
+  background: #17171b;
+  color: #ffe066;
+  padding: 38px 0 26px 0;
+  font-size: 1.01rem;
+}
+.ub-footer-inner {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  align-items: center;
+  justify-content: space-between;
+}
+.ub-footer a {
+  color: #fff58a;
+  text-decoration: underline;
+}
+.ub-footer a:hover {
+  color: #ffd43b;
+}
+.ub-footer-brand {
+  font-family: 'Montserrat',sans-serif;
+  color: #ffe066;
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+@media (max-width:980px) {
+  .ub-section-inner, .ub-footer-inner, .ub-header-inner { max-width: 98vw; }
+  .ub-team-grid, .ub-values-list, .ub-columns { flex-direction: column; gap: 20px;}
+}
+
+  </style>
+</head>
+<body>
+  <header class="ub-header">
+    <div class="ub-header-inner">
+     
+  </header>
+
+  <section class="ub-hero">
+    <div class="ub-hero-bg"></div>
+    <div class="ub-hero-content">
+      <h1>About Us</h1>
+      <p>Building Trust, Constructing Dreams</p>
+    </div>
+  </section>
+
+  <section class="ub-section" id="about">
+    <div class="ub-section-inner">
+      <h2>Our Company</h2>
+      <p>
+        PK Builders delivers end-to-end building and infrastructure projects, blending innovation and trust since our inception. Our commitment to quality, transparency, and timely delivery helps clients turn spaces into inspiring realities.
+      </p>
+      <div class="ub-values-list">
+        <div class="ub-value">
+          <div class="ub-value-title">Quality Craftsmanship</div>
+          <div class="ub-value-text">From residential villas to commercial complexes, our attention to detail ensures durable, beautiful results</div>
+        </div>
+        <div class="ub-value">
+          <div class="ub-value-title">Transparent Process</div>
+          <div class="ub-value-text">Open communication, precise estimates, and honest advice—always</div>
+        </div>
+        <div class="ub-value">
+          <div class="ub-value-title">Customer Focus</div>
+          <div class="ub-value-text">Every project is unique. We tailor designs, construction, and after-sales support for your scenario</div>
+        </div>
+        <div class="ub-value">
+          <div class="ub-value-title">Sustainability</div>
+          <div class="ub-value-text">We integrate eco-friendly materials and energy-smart practices wherever possible</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ub-section alt" id="team">
+    <div class="ub-section-inner">
+      <h2>Our Leadership</h2>
+      <div class="ub-team-grid">
+        <div class="ub-team-member">
+          <div class="ub-team-info">
+            <div class="ub-team-name">A. Karthik</div>
+            <div class="ub-team-title">Managing Director</div>
+            <div class="ub-team-desc">
+              Visionary founder with 15+ years in design-build and project leadership. Elevates industry standards through hands-on dedication.
+            </div>
+          </div>
+        </div>
+        <div class="ub-team-member">
+          <div class="ub-team-info">
+            <div class="ub-team-name">R. Priya</div>
+            <div class="ub-team-title">Director of Operations</div>
+            <div class="ub-team-desc">
+              Specialist in operations, logistics, and procurement; ensures seamless execution and timely delivery for every client.
+            </div>
+          </div>
+        </div>
+        <div class="ub-team-member">
+          <div class="ub-team-info">
+            <div class="ub-team-name">S. Arun</div>
+            <div class="ub-team-title">Head, Technical</div>
+            <div class="ub-team-desc">
+              Civil engineer and technical head, drives quality assurance and compliance on all projects.
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </section>
+
+  <section class="ub-section" id="mission">
+    <div class="ub-section-inner">
+      <h2>Our Mission & Vision</h2>
+      <div class="ub-columns">
+        <div>
+          <h3>Our Mission</h3>
+          <p>To consistently deliver quality structures that inspire trust and elevate lifestyles while upholding the highest standards of ethics and professionalism.</p>
+        </div>
+        <div>
+          <h3>Our Vision</h3>
+          <p>To be the preferred partner in construction for clients seeking reliability, innovation, and value for every rupee invested.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ub-section alt" id="whyus">
+    <div class="ub-section-inner">
+      <h2>Why PK Builders?</h2>
+      <ul class="ub-list">
+        <li>In-house architects, engineers, and project managers</li>
+        <li>Clear contracts and regular project updates</li>
+        <li>Customer-centric warranty & after-sales support</li>
+        <li>On-time, on-budget, every time</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="ub-footer">
+    <div class="ub-footer-inner">
+      <div>
+        <strong>Address:</strong><br>
+        Alkasha Centre, 3/330, Door No: 3A, Third Floor, Rajiv Gandhi Salai,<br>
+        Thoraipakkam, Chennai 600097
+      </div>
+      <div>
+        <strong>Contact:</strong><br>
+        <a href="mailto:info@PKBuilders.com">info@PKBuilders.com</a><br>
+        <a href="tel:+919940199408">+91 99401 99408</a>
+      </div>
+      <div class="ub-footer-brand">PK Builders &copy; 2025. All rights reserved.</div>
+    </div>
+  </footer>
+</body>
+</html>

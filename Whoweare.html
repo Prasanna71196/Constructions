@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Safety | PK Construction Inspired</title>
+  <style>
+   :root {
+  --PK-yellow: #ffd600;
+  --hero-grey: darkgrey;
+  --section-bg: #f6f7f7;
+  --section-alt: #f0f1ec;
+  --content-max: 1020px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #222c32;
+  background: var(--section-bg);
+  background-color: lightgrey;
+}
+.container {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* HERO */
+.safety-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 32px 0 16px 0;
+  background: var(--hero-grey);
+}
+.safety-hero-imagewrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.safety-hero-img {
+  max-width: 920px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+.safety-hero-content {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  background: rgba(35,35,35,0.41);
+  border-radius: 20px;
+  padding: 32px 18px 24px 18px;
+  margin-top: -42px;
+}
+.safety-hero h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+.hero-lead {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 10px 0 18px 0;
+  color: var(--PK-yellow);
+  text-shadow: 0 1px 8px rgba(0,0,0,0.05);
+}
+.hero-desc {
+  font-size: 1.03rem;
+  font-weight: 400;
+  margin-bottom: 12px;
+  line-height: 1.7;
+}
+
+/* Main Sections */
+.safety-section {
+  background: #fff;
+  padding: 40px 0 28px 0;
+  margin-bottom: 0;
+}
+.safety-section.alt-bg {
+  background: var(--section-alt);
+}
+.safety-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  max-width: 1000px;
+  margin: 0 auto 0 auto;
+  align-items: flex-start;
+}
+.safety-col {
+  flex: 1 1 280px;
+  min-width: 260px;
+  max-width: 450px;
+  padding-right: 10px;
+}
+.safety-col h2 {
+  font-size: 1.17rem;
+  font-weight: 700;
+  color: #003e6e;
+  margin: 0 0 10px 0;
+  letter-spacing: 1.2px;
+}
+.safety-col p {
+  font-size: 1.03rem;
+  color: #313843;
+  margin: 0 0 20px 0;
+  line-height: 1.7;
+}
+.safety-img-row {
+  width: 100%;
+  text-align: center;
+  margin: 30px 0 8px 0;
+}
+.safety-photo {
+  border-radius: 12px;
+  box-shadow: 0 2px 14px rgba(35,75,60,.11);
+  width: 380px;
+  max-width: 96vw;
+  height: 190px;
+  object-fit: cover;
+  margin-bottom: 12px;
+  border: 2px solid #e5e5e5;
+  background: #eee;
+  display: inline-block;
+}
+
+/* Footer */
+.safety-footer {
+  background: #353535;
+  color: #eaeaea;
+  text-align: center;
+  padding: 30px 10px;
+  font-size: 0.96rem;
+  letter-spacing: .5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .safety-content { flex-direction: column; gap: 20px; }
+  .safety-col { max-width: 100%; padding-right: 0;}
+}
+@media (max-width: 650px) {
+  .container { padding: 0 7vw; }
+  .safety-section, .safety-section.alt-bg { padding: 12vw 0 6vw 0; }
+  .safety-hero-img {
+    max-width: 100vw;
+    height: auto;
+  }
+  .safety-hero-content { padding: 18px 5vw 14px 5vw; font-size: 0.97rem; }
+  .safety-hero h1 { font-size: 1.1rem; }
+  .hero-lead, .hero-desc {
+    font-size: .92rem;
+    padding: 0 2vw;
+  }
+  .safety-img-row { margin: 16px 0 0 0; }
+  .safety-photo {
+    max-width: 96vw;
+    width: 96vw;
+    min-width: 110px;
+    height: 90px;
+  }
+  .safety-col h2 { font-size: 1.06rem; }
+  .safety-col p { font-size: 0.97rem; }
+}
+@media (max-width: 410px) {
+  .safety-hero-content { padding: 6vw 1vw 8vw 1vw; }
+  .safety-section, .safety-section.alt-bg { padding: 8vw 0 4vw 0; }
+  .safety-photo { height: 68px; margin-bottom: 6px; }
+}
+
+  </style>
+</head>
+<body>
+  <header class="safety-hero">
+  <div class="safety-hero-imagewrap">
+    <img src="Images/safetyimage.png" alt="PK Safety Banner" class="safety-hero-img" />
+  </div>
+
+  </header>
+
+  <main>
+    <section class="safety-section container">
+      <div class="safety-content">
+        <div class="safety-col">
+          <h2>Leading the Way</h2>
+          <p>
+            We all contribute to the success of PK’s safety program: from executives fostering our safety culture, to superintendents leading the way, project coordinators who help trade partners understand our safety practices, and tradespeople guiding young apprentices.
+          </p>
+        </div>
+        <div class="safety-col">
+          <h2>Safety Stats</h2>
+          <p>
+            We maintain best-in-class industry safety with over 50 million hours worked annually and an overall total recordable incident rate and lost-time frequency rate among the industry’s lowest.
+          </p>
+        </div>
+      </div>
+      <div class="safety-img-row">
+        <img src="Images/training.jpg.png" width="400" height="190" alt="Safety training, staff learning" class="safety-photo" />
+      </div>
+    </section>
+
+    <section class="safety-section alt-bg container">
+      <div class="safety-content">
+        <div class="safety-col">
+          <h2>Continuous Improvement</h2>
+          <p>
+            Our people are our most valuable asset. We are dedicated to a safe and healthy work environment for all. We constantly look for innovative ways to improve practices and work with partners to embrace a mindset of uncompromising safety.
+          </p>
+        </div>
+        <div class="safety-img-row">
+          <img src="Images/helmetshelf.jpg.png" width="400" height="180" alt="Line of helmets on shelf" class="safety-photo" />
+        </div>
+      </div>
+    </section>
+
+    <section class="safety-section container">
+      <div class="safety-content">
+        <div class="safety-col">
+          <h2>Safety Innovation</h2>
+          <p>
+            We evolve our safety practices by embracing technology in both the office and on job sites. Our Health, Safety and Environment group partners with the business technology group to introduce new safety applications.
+          </p>
+        </div>
+        <div class="safety-col">
+          <h2>Hazard Inspection</h2>
+          <p>
+            The Hazard Inspection app blends machine learning with safety standards to conduct inspections. By using photos of hazards and descriptions, it reduces manual entry and helps us identify and mitigate safety incidents.
+          </p>
+        </div>
+      </div>
+      <div class="safety-img-row">
+        <img src="Images/tabletinspection.jpg.png" width="400" height="190" alt="Construction worker using safety tablet" class="safety-photo" />
+      </div>
+    </section>
+
+    <section class="safety-section alt-bg container">
+      <div class="safety-content">
+        <div class="safety-col">
+          <h2>Pre-job Safety Instruction</h2>
+          <p>
+            The Pre-job Safety Instruction (PSI) and PSI Audit apps let users complete and audit safety instructions with ease. By giving access to documentation and easy data capture, PSI reduces manual entry and saves valuable time.
+          </p>
+        </div>
+        <div class="safety-img-row">
+          <img src="Images/briefing.jpg.png" width="400" height="190" alt="Pre-job safety briefing" class="safety-photo" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="safety-footer">
+    <div class="container">
+      <p>&copy; 2025 PK Construction (Sample Page). All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
